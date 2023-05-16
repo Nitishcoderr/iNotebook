@@ -1,0 +1,6 @@
+step 1 - we established a mongo server
+step 2 - now we will make index.js a express server
+step 3 - we created a express server in index
+step 4 - creating mongo model in model
+step 5 - creating schema in user.js
+step 6 - creating routes
