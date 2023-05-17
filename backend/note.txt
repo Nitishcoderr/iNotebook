@@ -8,3 +8,11 @@ step 6 - creating routes
 step -7 - creating a user in auth
 video 46
 step - 8--> using express validator to verify mobile no or eamil
+step - 9 --> creating mogosh model user
+User.create({
+        name:req.body.name,
+        password:req.body.password,
+        email:req.body.email,
+    }).then(user=>res.json(user))
+    .catch(err=>{console.log(err)  -->to control errro in tc 
+    res.json({error:'Please enter a unique email',message:err.message})})
