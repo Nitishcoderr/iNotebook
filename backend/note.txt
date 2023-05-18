@@ -5,16 +5,20 @@ step 3 - we created a express server in index
 step 4 - creating mongo model in model // models are with capital named
 step 5 - creating schema in user.js //small lettered
 step 6 - creating routes
-step -7 - creating a user in auth
+step -7 - creating  routes 1 creating a user auth in auth// loging a user using : post "api/auth/createuser"
 video 46
 step - 8--> using express validator to verify mobile no or eamil
 step - 9 --> creating mogosh model user
 User.create({
-        name:req.body.name,
-        password:req.body.password,
-        email:req.body.email,
-    }).then(user=>res.json(user))
-    .catch(err=>{console.log(err)  -->to control errro in tc 
-    res.json({error:'Please enter a unique email',message:err.message})})
-    step - 10 --> using bcrypt to use password encrypted --> hash,salt
-    step - 11 --> using json web token to give user a token
+     name:req.body.name,
+     password:req.body.password,
+     email:req.body.email,
+ }).then(user=>res.json(user))
+ .catch(err=>{console.log(err)  -->to control errro in tc 
+ res.json({error:'Please enter a unique email',message:err.message})})
+ step - 10 --> using bcrypt to use password encrypted --> hash,salt
+ step - 11 --> using json web token to give user a token
+ step - 12 -> creating routes 2 creating a loging auth in auth// loging a user using : post "api/auth/login"
+ step - 13 --> creating routes 3-- getuser a user using : post "api/auth/getuser".no login required
+ video 50 completed
+ step 14 --> now using middleware to fetch user data-- created in middleware folder
