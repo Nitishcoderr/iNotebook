@@ -22,3 +22,7 @@ User.create({
  step - 13 --> creating routes 3-- getuser a user using : post "api/auth/getuser".no login required
  video 50 completed
  step 14 --> now using middleware to fetch user data-- created in middleware folder
+ step -15 --> now created a Notes to create note -->ROUTES -1 get all the notes using : GET "api/auth/fetchallnotes" in notes.js 
+ step - 16 --> ROUTES -2 Add a new note using : POST "api/auth/addnote".login required
+ step - 17 -->  ROUTES -3 updating a existing note using : POST "api/auth/updatenote".login required
+ctep - 18 --> ROUTES -3 updating a existing note using : put "api/notes/deletenote".login required
