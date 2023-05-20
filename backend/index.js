@@ -16,5 +16,5 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 app.listen(port, () => {
-  console.log(`http://localhost:${port}`)
+  console.log(`iNotebook listining at http://localhost:${port}`)
 })

@@ -2,3 +2,4 @@ install react router dom in 2 step
 step - 1 --> adding in script -->"both": "concurrently \"npm run start\" \"nodemon backend/index.js\""
 step - 2 -->to run both backend and react we run --> npm i react-router-dom concurrently
 step - 3 --> using context api --> created folder in src
+step -4 --> using useLocation hook for when home or about is active it will be dark in navbar
