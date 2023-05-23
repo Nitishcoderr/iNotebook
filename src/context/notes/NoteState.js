@@ -19,7 +19,6 @@ const NoteState = (props) => {
       }
     });
     const json = await response.json()
-    console.log(json);
     setNotes(json)
   }
 
@@ -35,20 +34,7 @@ const NoteState = (props) => {
       },
       body: JSON.stringify({ title, description, tag })
     });
-    const json = await response.json()
-    console.log(json);
-
-
-    console.log("Adding a note");
-    const note = {
-      "_id": "646620da7d8fa9144e9b8fe826",
-      "user": "6465e6e7048e16af1f2d5ff6",
-      "title": title,
-      "description": description,
-      "tag": tag,
-      "date": "2023-05-18T12:58:02.489Z",
-      "__v": 0
-    }
+    const note = await response.json()
     setNotes(notes.concat(note))
   }
 
@@ -64,9 +50,7 @@ const NoteState = (props) => {
       },
     });
     const json = await response.json()
-    console.log(json);
-
-    console.log(`Deleting mote ${id}`);
+    // eslint-disable-next-line
     const newNotes = notes.filter((note) => { return note._id !== id })
     setNotes(newNotes)
   }
@@ -83,7 +67,7 @@ const NoteState = (props) => {
       body: JSON.stringify({ title, description, tag })
     });
     const json = await response.json()
-    console.log(json);
+    // eslint-disable-next-line
 
     let newNotes = JSON.parse(JSON.stringify(notes))
     // Logic to edit a CLIENT
