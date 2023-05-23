@@ -1,5 +1,5 @@
 // rafce
-import React,{ useContext,useEffect } from 'react'
+import React from 'react'
 
 const About = () => {
   
